@@ -1,4 +1,4 @@
-# SetUp
+# SetUp (1st commit)
 
 -   installing nodemon
 -   setting type as module in package.json
@@ -8,7 +8,7 @@
 -   creating env file
 -   creating necessary folder structure in src
 
-# SetUp mongo atlas
+# SetUp mongo atlas (2nd commit)
 
 -   create account on mongo atlas
 -   create project and set up access database user and access
@@ -16,17 +16,37 @@
 -   Add port to env file
 -   Connect db with backend using connection string from compass.
 
-# Major Dependencies
+# Major Dependencies (3rd commit)
 
 -   Install mongoose, dotenv and express.
 -   Install cookie-parser, cors.
 
-# Configuring MiddleWare
+# Configuring MiddleWare (4th commit)
 
 -   cors
 -   static data
 -   data from url(url encoding)
 -   cookieParser
+
+# creating utils for error and response (5th commit)
+
+-   streamlining error and response.
+
+# Creating Modals (6th commit)
+
+-   user modal
+-   video modal
+
+# Dependency (7th commit)
+
+-   install mongoose aggregate paginate
+-   install bcrypt (password encryption)
+-   install jsonWebToken (token encryption)
+
+# (8th commit)
+
+-   encrypting password before saving using bcrypt
+-   generating access token and refresh token
 
 # What is MiddleWare
 
@@ -37,3 +57,4 @@
 -   Always remember "Database is in another continent" so it will take time to respond.
 -   Always use async-await and try-catch (because there are more chance of things not going your - - way) for db.
 -   Use app.use() for middlewares
+-   JWT is a bearer token. It's like a key.
