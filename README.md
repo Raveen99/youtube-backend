@@ -54,7 +54,13 @@
 -   writing cloudinary logic for file upload from local.
 -   writing multer middleware for saving file to local.
 
+# (10th commit)
+
+-   Configuting routes and controlles
+
 # What is MiddleWare
+
+-   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
 
 -   Now user send some request on instagram.com/something now api will be called to serve this request and give some response. Before serving this request we want to check whether user is logged in or not. This is done by middleware and we can can add more than one middleware before these request.
 

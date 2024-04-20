@@ -29,4 +29,16 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
+//routes
+import userRouter from "./routes/user.routes.js";
+
+/* Routes declaration
+   Can't use app.get() bcoz we have routes in seperate file and to bring routes here we need to use
+   middleware. So check this syntax.
+*/
+app.use(
+    "/api/v1/users",
+    userRouter
+); /* this will pass access to userRouter and things will be handled there. */
+
 export default app;
