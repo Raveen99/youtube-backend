@@ -56,7 +56,18 @@
 
 # (10th commit)
 
--   Configuting routes and controlles
+-   Configuting routes and controlles.
+
+# (11th commit)
+
+-   Writing logic for user.
+-   Accept fields from req.body
+-   use multer middleware in user.routes.js and get files uploaded on system.
+-   check for validation for each filed in user. For errors use ApiError Wrapper.
+-   check whether user with similar username or email exist or not using operators.
+-   Getting images and uploading to cloudinary.
+-   Creating user, removing password and refreshToken.
+-   Conforming user creation and sending response.
 
 # What is MiddleWare
 
