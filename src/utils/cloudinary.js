@@ -22,14 +22,16 @@ const uploadCloudinary = async (localFilePath) => {
         });
 
         //file uploaded successfully
-        console.log("File uploaded successfully", response);
+        console.log("File uploaded successfully", response.url);
+        fs.unlinkSync(localFilePath);
+
         return response;
     } catch (error) {
         /* instead of writing conventional error statement why we are do this is suppose if we
             are not able to upload file to cloudinary a lot of junk (files) will be saved on 
             local and we don't want that so unlink it from local using fs.
         */
-
+        console.log("Error in cloudinary: ", error);
         fs.unlinkSync(localFilePath);
         return null;
     }
