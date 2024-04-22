@@ -69,6 +69,17 @@
 -   Creating user, removing password and refreshToken.
 -   Conforming user creation and sending response.
 
+# (12th commit)
+
+-   Testing on Postman
+
+# (13th commit)
+
+-   Creating login logic for user in controller.
+-   Creating function for token generation in user controller.
+-   Creating middleware for auth checking using jwt.
+-   Creating logic for logging out user.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
