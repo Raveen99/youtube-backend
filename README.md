@@ -80,11 +80,23 @@
 -   Creating middleware for auth checking using jwt.
 -   Creating logic for logging out user.
 
+# (14th commit)
+
+-   Adding new Endpoint for updatingAccessToken in user controller if refreshToken is not expired.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
 
 -   Now user send some request on instagram.com/something now api will be called to serve this request and give some response. Before serving this request we want to check whether user is logged in or not. This is done by middleware and we can can add more than one middleware before these request.
+
+# What is accessToken and RefreshToken
+
+-   WhenEven user logs into a system accessToken and RefreshToken is given to user. Generally accessToken has short span than refreshToken. Suppose after one day user again hit the endpoint and in backend the code will
+    check whether user is still logged in or not. Since the accessToken expires after one day system will send 401 status to frontend and user have to login again. So instead of this what we can do once frontend get 401
+    request it will send request to another endpoint to check refresh token for same user in db. If both are matched then system will generate new accessToken to user.
+
+-   So in user experience he/she didn't logged in again but in backend its kind of logging in based on refreshToken.
 
 # Notes to keep in mind
 
