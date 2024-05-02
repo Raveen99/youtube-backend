@@ -84,6 +84,11 @@
 
 -   Adding new Endpoint for updatingAccessToken in user controller if refreshToken is not expired.
 
+# (15th commit)
+
+-   Creating subscription model
+-   Creating endPoints in userController to update password, getCurrentUser, updateAccountDetails, updateAvatarImage and updateCoverImage.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
