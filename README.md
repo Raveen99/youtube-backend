@@ -89,6 +89,10 @@
 -   Creating subscription model
 -   Creating endPoints in userController to update password, getCurrentUser, updateAccountDetails, updateAvatarImage and updateCoverImage.
 
+# (16th commit)
+
+-   Creating new endpoint in users controller for getting user channel Info.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
