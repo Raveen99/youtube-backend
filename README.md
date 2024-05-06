@@ -93,6 +93,10 @@
 
 -   Creating new endpoint in users controller for getting user channel Info.
 
+# (17th commit)
+
+-   Adding WatchHistory endPoint.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
@@ -113,3 +117,4 @@
 -   Always use async-await and try-catch (because there are more chance of things not going your - - way) for db.
 -   Use app.use() for middlewares
 -   JWT is a bearer token. It's like a key.
+-   When we do req.user.\_id what we will get some will say mongoDb id but we will only get string ('662552cbbcdf90fbf97fb8ca') not mongoDb id. MongoDb id is like this ObjectId('662552cbbcdf90fbf97fb8ca'). Since we use mongoose it will automatically convert this string to mongoDb id when we use find or findById. But when we use aggregation pipeline mongoose doesn't interfere with aggregation pipeline. The code written in aggregation pipeline goes directly.So here we need to make mongoose ObjectId. See in auth controller endpoint getWatchHistory.
