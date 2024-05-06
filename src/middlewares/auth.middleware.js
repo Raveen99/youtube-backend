@@ -7,11 +7,11 @@ import { User } from "../models/user.model.js";
   we will be able to logout user.
 */
 
-export const verifyJWT = asyncHandler(async (req, res, next) => {
+export const verifyJWT = asyncHandler(async (req, _, next) => {
     try {
         /* Reasnon why we are checking header is user might be using mobile application. So, in that case
   data is passed in header. */
-
+        console.log("cookies: ", req.cookies);
         const token =
             req.cookies?.accessToken ||
             req.header("Authorization")?.replace("Bearer ", "");
