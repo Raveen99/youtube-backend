@@ -97,6 +97,10 @@
 
 -   Adding WatchHistory endPoint.
 
+# (18th commit)
+
+-   Adding routes for user controller.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
