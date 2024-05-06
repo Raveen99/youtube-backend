@@ -101,6 +101,10 @@
 
 -   Adding routes for user controller.
 
+# (19th commit)
+
+-   Add comment, like, playlist, tweet models.
+
 # What is MiddleWare
 
 -   In simple terms : Jaha bhi jaa rhe ho ik baar milke jaana.
